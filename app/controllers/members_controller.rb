@@ -23,6 +23,7 @@ class MembersController < ApplicationController
 
   def refine_params
     params = member_params
+    params.delete(:avatar) if params[:avatar] == ''
     role = params.delete(:role)
     gender = params.delete(:gender)
     params[:role] = role.to_i
