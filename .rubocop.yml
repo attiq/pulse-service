@@ -1,0 +1,95 @@
+AllCops:
+  CacheRootDirectory: .cache/rubocop
+  Exclude:
+    - 'db/schema.rb'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'docs/**/*'
+    - 'danger/**/*'
+    - Dangerfile
+
+Style/Documentation:
+  Enabled: false
+
+Metrics:
+  Exclude:
+    - 'db/migrate/*.rb'
+
+Layout/DotPosition:
+  EnforcedStyle: leading
+  SupportedStyles:
+    - leading
+    - trailing
+
+Layout/IndentationWidth:
+  Width: 2
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - 'config/initializers/devise.rb'
+
+Metrics/BlockLength:
+  Max: 50
+  ExcludedMethods: ['describe', 'context', 'configure', 'class_methods', 'workflow']
+  Exclude:
+    - 'spec/requests/api/**/*'
+    - 'db/migrate/**/*'
+    - 'spec/factories/**/*'
+    - 'lib/tasks/**/*'
+    - 'config/routes/**/*'
+    - 'config/routes.rb'
+    - 'config/initializers/devise.rb'
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/ClassLength:
+  Max: 150
+
+Layout/TrailingEmptyLines:
+  Exclude:
+    - 'script/live_migration/release_004/002_modify_custom_close_reason_for_projects.rb'
+    - 'script/live_migration/release_004/003_update_opportunities_status.rb'
+
+Style/ModuleFunction:
+  EnforcedStyle: extend_self
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
+Style/SlicingWithRange:
+  Enabled: true
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+
+Style/RedundantRegexpEscape:
+  Enabled: true
