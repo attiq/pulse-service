@@ -12,6 +12,6 @@ module Authenticator
 
   def get_token(request)
     @token ||= JWT.decode(request.headers['Authorization'].split(' ').last,
-                              Rails.application.credentials.devise_jwt_secret_key!).first
+                              Rails.application.secrets.secret_key_base!).first
   end
 end
