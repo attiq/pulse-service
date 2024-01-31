@@ -1,1 +1,0 @@
-[{"severity":"warning","location":{"begin_pos":178,"end_pos":204},"message":"Lint/RescueException: Avoid rescuing the `Exception` class. Perhaps you meant to rescue `StandardError`?","cop_name":"Lint/RescueException","status":"unsupported"}]

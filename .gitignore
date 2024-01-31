@@ -7,8 +7,10 @@
 # Ignore bundler config.
 /.bundle
 .env
+.cache/*
 
 # Ignore all logfiles and tempfiles.
+/log
 /log/*
 /tmp/*
 !/log/.keep
